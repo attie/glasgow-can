@@ -9,5 +9,6 @@ A rough spec is outlined below:
 - Standard DE-9 connectors, suitable for use with OBD-II cables
 - Isolation between each CAN port and the Glasgow (and host)
 - CAN FD support
+- Software configurable 120&Ohm; termination
 
 Out-of-Tree support will be required when work on the applet begins (see PR [#213](https://github.com/GlasgowEmbedded/glasgow/pull/213)).
