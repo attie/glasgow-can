@@ -10,5 +10,10 @@ A rough spec is outlined below:
 - Isolation between each CAN port and the Glasgow (and host)
 - CAN FD support
 - Software configurable 120&Ohm; termination
+- ESD protection
 
 Out-of-Tree support will be required when work on the applet begins (see PR [#213](https://github.com/GlasgowEmbedded/glasgow/pull/213)).
+
+Pinout as below, permitting use of standard OBD-II cables.
+
+![pinout](./pinout.png)
