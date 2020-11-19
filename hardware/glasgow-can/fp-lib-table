@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name glasgow-can)(type KiCad)(uri ${KIPRJMOD}/glasgow-can.pretty)(options "")(descr ""))
+)
