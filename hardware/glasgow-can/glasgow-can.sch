@@ -14,415 +14,713 @@ Comment3 "Sheet: Top Level"
 Comment4 "Designed by: Attie Grande"
 $EndDescr
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J1
-U 1 1 5FB664D2
-P 7750 2300
-F 0 "J1" V 7800 2800 50  0000 L CNN
-F 1 "Conn_02x10_Odd_Even" V 7800 2250 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical_SMD" H 7750 2300 50  0001 C CNN
-F 3 "~" H 7750 2300 50  0001 C CNN
-	1    7750 2300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L DX_MON:0V #PWR01
-U 1 1 5FB6745E
-P 8350 1850
-F 0 "#PWR01" H 8350 1650 50  0001 C CNN
-F 1 "0V" H 8355 1677 50  0000 C CNN
-F 2 "" H 8050 1950 50  0001 C CNN
-F 3 "" H 8050 1950 50  0001 C CNN
-	1    8350 1850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7450 2000 7450 1850
-Wire Wire Line
-	7450 1850 7550 1850
-Wire Wire Line
-	7550 2000 7550 1850
-Connection ~ 7550 1850
-Wire Wire Line
-	7550 1850 7650 1850
-Wire Wire Line
-	7650 2000 7650 1850
-Connection ~ 7650 1850
-Wire Wire Line
-	7650 1850 7750 1850
-Wire Wire Line
-	7750 2000 7750 1850
-Connection ~ 7750 1850
-Wire Wire Line
-	7750 1850 7850 1850
-Wire Wire Line
-	7850 2000 7850 1850
-Connection ~ 7850 1850
-Wire Wire Line
-	7850 1850 7950 1850
-Wire Wire Line
-	7950 2000 7950 1850
-Connection ~ 7950 1850
-Wire Wire Line
-	7950 1850 8050 1850
-Wire Wire Line
-	8050 2000 8050 1850
-Connection ~ 8050 1850
-Wire Wire Line
-	8050 1850 8150 1850
-Wire Wire Line
-	8150 2000 8150 1850
-Connection ~ 8150 1850
-NoConn ~ 8250 2500
-NoConn ~ 8250 2000
-NoConn ~ 7350 2500
-Text Label 7450 3050 1    50   ~ 0
-CAN1_TxD
-Text Label 7550 3050 1    50   ~ 0
-CAN1_RxD
-Text Label 7650 3050 1    50   ~ 0
-CAN1_SILENT
-Text Label 7750 3050 1    50   ~ 0
-CAN1_TERM
-Text Label 7850 3050 1    50   ~ 0
-CAN1_TxLED
-Text Label 7950 3050 1    50   ~ 0
-CAN1_RxLED
-NoConn ~ 8050 2500
-NoConn ~ 8150 2500
-Text Notes 8400 2325 0    50   ~ 0
-Glasgow Interface\nPort A
-$Comp
 L Connector_Generic:Conn_02x10_Odd_Even J5
-U 1 1 5FB8692F
-P 7850 5200
-F 0 "J5" V 7900 4600 50  0000 R CNN
-F 1 "Conn_02x10_Odd_Even" V 7900 5150 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical_SMD" H 7850 5200 50  0001 C CNN
-F 3 "~" H 7850 5200 50  0001 C CNN
-	1    7850 5200
-	0    1    1    0   
+U 1 1 5FB664D2
+P 3850 3950
+F 0 "J5" V 3900 4450 50  0000 L CNN
+F 1 "Conn_02x10_Odd_Even" V 3900 3900 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 3850 3950 50  0001 C CNN
+F 3 "~" H 3850 3950 50  0001 C CNN
+	1    3850 3950
+	-1   0    0    -1  
 $EndComp
 $Comp
 L DX_MON:0V #PWR04
-U 1 1 5FB86935
-P 7250 5650
-F 0 "#PWR04" H 7250 5450 50  0001 C CNN
-F 1 "0V" H 7255 5477 50  0000 C CNN
-F 2 "" H 6950 5750 50  0001 C CNN
-F 3 "" H 6950 5750 50  0001 C CNN
-	1    7250 5650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8150 5500 8150 5650
-Wire Wire Line
-	8150 5650 8050 5650
-Wire Wire Line
-	8050 5500 8050 5650
-Connection ~ 8050 5650
-Wire Wire Line
-	8050 5650 7950 5650
-Wire Wire Line
-	7950 5500 7950 5650
-Connection ~ 7950 5650
-Wire Wire Line
-	7950 5650 7850 5650
-Wire Wire Line
-	7850 5500 7850 5650
-Connection ~ 7850 5650
-Wire Wire Line
-	7850 5650 7750 5650
-Wire Wire Line
-	7750 5500 7750 5650
-Connection ~ 7750 5650
-Wire Wire Line
-	7750 5650 7650 5650
-Wire Wire Line
-	7650 5500 7650 5650
-Connection ~ 7650 5650
-Wire Wire Line
-	7650 5650 7550 5650
-Wire Wire Line
-	7550 5500 7550 5650
-Connection ~ 7550 5650
-Wire Wire Line
-	7550 5650 7450 5650
-Wire Wire Line
-	7450 5500 7450 5650
-Connection ~ 7450 5650
-NoConn ~ 7350 5000
-NoConn ~ 7350 5500
-NoConn ~ 8250 5000
-Text Label 8150 4950 1    50   ~ 0
-CAN2_TxD
-Text Label 8050 4950 1    50   ~ 0
-CAN2_RxD
-Text Label 7950 4950 1    50   ~ 0
-CAN2_SILENT
-Text Label 7850 4950 1    50   ~ 0
-CAN2_TERM
-Text Label 7750 4950 1    50   ~ 0
-CAN2_TxLED
-NoConn ~ 7550 5000
-NoConn ~ 7450 5000
-Text Label 7650 4950 1    50   ~ 0
-CAN2_RxLED
-Wire Wire Line
-	7650 4450 7650 5000
-Wire Wire Line
-	7750 4450 7750 5000
-Wire Wire Line
-	7850 4450 7850 5000
-Wire Wire Line
-	7950 4450 7950 5000
-Wire Wire Line
-	8050 4450 8050 5000
-Wire Wire Line
-	8150 4450 8150 5000
-Wire Wire Line
-	7450 2500 7450 3050
-Wire Wire Line
-	7550 2500 7550 3050
-Wire Wire Line
-	7650 2500 7650 3050
-Wire Wire Line
-	7750 2500 7750 3050
-Wire Wire Line
-	7850 2500 7850 3050
-Wire Wire Line
-	7950 2500 7950 3050
-$Sheet
-S 5000 1700 750  1150
-U 5FB9C48E
-F0 "CAN1" 50
-F1 "CANx.sch" 50
-F2 "TxD" I R 5750 2050 50 
-F3 "RxD" I R 5750 2150 50 
-F4 "SILENT" I R 5750 2300 50 
-F5 "TERM" I R 5750 2450 50 
-F6 "TxLED" I R 5750 2600 50 
-F7 "RxLED" I R 5750 2700 50 
-F8 "+5V" I R 5750 1850 50 
-F9 "CANH" I L 5000 2200 50 
-F10 "CANL" I L 5000 2400 50 
-$EndSheet
-Text Label 7350 1750 1    50   ~ 0
-CAN1_+5V
-Wire Wire Line
-	7350 1350 7350 2000
-Wire Wire Line
-	5750 1850 6300 1850
-Text Label 5800 1850 0    50   ~ 0
-CAN1_+5V
-Text Label 5800 2050 0    50   ~ 0
-CAN1_TxD
-Text Label 5800 2150 0    50   ~ 0
-CAN1_RxD
-Text Label 5800 2300 0    50   ~ 0
-CAN1_SILENT
-Text Label 5800 2450 0    50   ~ 0
-CAN1_TERM
-Text Label 5800 2600 0    50   ~ 0
-CAN1_TxLED
-Text Label 5800 2700 0    50   ~ 0
-CAN1_RxLED
-Wire Wire Line
-	5750 2050 6300 2050
-Wire Wire Line
-	6300 2150 5750 2150
-Wire Wire Line
-	5750 2300 6300 2300
-Wire Wire Line
-	6300 2450 5750 2450
-Wire Wire Line
-	5750 2600 6300 2600
-Wire Wire Line
-	6300 2700 5750 2700
-Wire Wire Line
-	5750 4850 6300 4850
-Text Label 5800 4850 0    50   ~ 0
-CAN2_+5V
-Text Label 5800 5050 0    50   ~ 0
-CAN2_TxD
-Text Label 5800 5150 0    50   ~ 0
-CAN2_RxD
-Text Label 5800 5300 0    50   ~ 0
-CAN2_SILENT
-Text Label 5800 5450 0    50   ~ 0
-CAN2_TERM
-Text Label 5800 5600 0    50   ~ 0
-CAN2_TxLED
-Text Label 5800 5700 0    50   ~ 0
-CAN2_RxLED
-Wire Wire Line
-	5750 5050 6300 5050
-Wire Wire Line
-	6300 5150 5750 5150
-Wire Wire Line
-	5750 5300 6300 5300
-Wire Wire Line
-	6300 5450 5750 5450
-Wire Wire Line
-	5750 5600 6300 5600
-Wire Wire Line
-	6300 5700 5750 5700
-$Sheet
-S 5000 4700 750  1150
-U 5FBB2899
-F0 "CAN2" 50
-F1 "CANx.sch" 50
-F2 "TxD" I R 5750 5050 50 
-F3 "RxD" I R 5750 5150 50 
-F4 "SILENT" I R 5750 5300 50 
-F5 "TERM" I R 5750 5450 50 
-F6 "TxLED" I R 5750 5600 50 
-F7 "RxLED" I R 5750 5700 50 
-F8 "+5V" I R 5750 4850 50 
-F9 "CANH" I L 5000 5200 50 
-F10 "CANL" I L 5000 5400 50 
-$EndSheet
-$Comp
-L Connector:DB9_Male J2
-U 1 1 5FC2C1BE
-P 2650 2350
-F 0 "J2" H 2750 2900 50  0000 C CNN
-F 1 "A-DS 09 A/KG-T2S" V 2900 2350 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 2650 2350 50  0001 C CNN
-F 3 " ~" H 2650 2350 50  0001 C CNN
-F 4 "Assmann WSW Components" H 2650 2350 50  0001 C CNN "MFR"
-F 5 "A-DS 09 A/KG-T2S" H 2650 2350 50  0001 C CNN "MPN"
-	1    2650 2350
+U 1 1 5FB6745E
+P 3400 4550
+F 0 "#PWR04" H 3400 4350 50  0001 C CNN
+F 1 "0V" H 3405 4377 50  0000 C CNN
+F 2 "" H 3100 4650 50  0001 C CNN
+F 3 "" H 3100 4650 50  0001 C CNN
+	1    3400 4550
 	-1   0    0    -1  
 $EndComp
-Text Label 4600 2400 0    50   ~ 0
+Wire Wire Line
+	3550 3650 3400 3650
+Wire Wire Line
+	3400 3650 3400 3750
+Wire Wire Line
+	3550 3750 3400 3750
+Connection ~ 3400 3750
+Wire Wire Line
+	3400 3750 3400 3850
+Wire Wire Line
+	3550 3850 3400 3850
+Connection ~ 3400 3850
+Wire Wire Line
+	3400 3850 3400 3950
+Wire Wire Line
+	3550 3950 3400 3950
+Connection ~ 3400 3950
+Wire Wire Line
+	3400 3950 3400 4050
+Wire Wire Line
+	3550 4050 3400 4050
+Connection ~ 3400 4050
+Wire Wire Line
+	3400 4050 3400 4150
+Wire Wire Line
+	3550 4150 3400 4150
+Connection ~ 3400 4150
+Wire Wire Line
+	3400 4150 3400 4250
+Wire Wire Line
+	3550 4250 3400 4250
+Connection ~ 3400 4250
+Wire Wire Line
+	3400 4250 3400 4350
+Wire Wire Line
+	3550 4350 3400 4350
+Connection ~ 3400 4350
+NoConn ~ 4050 4450
+NoConn ~ 3550 4450
+NoConn ~ 4050 3550
+Text Label 4150 3650 0    50   ~ 0
+CAN1_TxD
+Text Label 4150 3750 0    50   ~ 0
+CAN1_RxD
+Text Label 4150 3850 0    50   ~ 0
+CAN1_TERM
+NoConn ~ 4050 4350
+Text Label 3200 3550 0    50   ~ 0
++5V
+Wire Wire Line
+	3200 3550 3550 3550
+Wire Wire Line
+	6100 1950 5550 1950
+Text Label 5550 1950 0    50   ~ 0
++5V
+Text Label 6950 2250 0    50   ~ 0
 CAN1_L
-Text Label 4600 2200 0    50   ~ 0
+Text Label 6950 2050 0    50   ~ 0
 CAN1_H
-Text Label 4600 5400 0    50   ~ 0
-CAN2_L
-Text Label 4600 5200 0    50   ~ 0
-CAN2_H
 $Comp
-L Connector_Generic:Conn_01x03 J6
-U 1 1 5FC48677
-P 3900 5350
-F 0 "J6" H 3900 5100 50  0000 C CNN
-F 1 "Conn_01x03" V 4050 5350 50  0000 C CNN
-F 2 "glasgow-can:TE_2834077-2" H 3900 5350 50  0001 C CNN
-F 3 "~" H 3900 5350 50  0001 C CNN
-F 4 "TE Connectivity" H 3900 5350 50  0001 C CNN "MFG"
-F 5 "2834077-2" H 3900 5350 50  0001 C CNN "MPN"
-	1    3900 5350
+L Connector:Conn_01x03_Male J2
+U 1 1 5FC66C44
+P 8600 2200
+F 0 "J2" H 8700 1950 50  0000 C CNN
+F 1 "Conn_01x03_Male" V 8500 2200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8600 2200 50  0001 C CNN
+F 3 "~" H 8600 2200 50  0001 C CNN
+	1    8600 2200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4100 5450 4200 5450
+	7300 2100 7300 2050
 Wire Wire Line
-	4200 5450 4200 5550
+	7300 2050 6850 2050
+Wire Wire Line
+	7300 2200 7300 2250
+Wire Wire Line
+	7300 2250 6850 2250
+Wire Wire Line
+	3400 4350 3400 4550
+$Sheet
+S 6100 1850 750  600 
+U 5FB9C48E
+F0 "CAN1" 50
+F1 "CANx.sch" 50
+F2 "TxD" I L 6100 2100 50 
+F3 "RxD" I L 6100 2200 50 
+F4 "TERM" I L 6100 2350 50 
+F5 "+5V" I L 6100 1950 50 
+F6 "CANH" I R 6850 2050 50 
+F7 "CANL" I R 6850 2250 50 
+$EndSheet
+Text Notes 3350 3250 0    79   Italic 0
+Glasgow Interface
+Wire Wire Line
+	8350 1400 8325 1400
+Wire Wire Line
+	8250 1400 8250 1500
 $Comp
-L DX_MON:0V #PWR03
-U 1 1 5FC4C081
-P 4200 5550
-F 0 "#PWR03" H 4200 5350 50  0001 C CNN
-F 1 "0V" H 4205 5377 50  0000 C CNN
-F 2 "" H 3900 5650 50  0001 C CNN
-F 3 "" H 3900 5650 50  0001 C CNN
-	1    4200 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 5250 4550 5250
-Wire Wire Line
-	4100 5350 4550 5350
-$Comp
-L Connector:Conn_01x03_Male J4
-U 1 1 5FC66C44
-P 3900 2350
-F 0 "J4" H 4000 2600 50  0000 C CNN
-F 1 "Conn_01x03_Male" V 3800 2350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3900 2350 50  0001 C CNN
-F 3 "~" H 3900 2350 50  0001 C CNN
-	1    3900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L DX_MON:0V #PWR02
-U 1 1 5FC67B1A
-P 4200 2550
-F 0 "#PWR02" H 4200 2350 50  0001 C CNN
-F 1 "0V" H 4205 2377 50  0000 C CNN
-F 2 "" H 3900 2650 50  0001 C CNN
-F 3 "" H 3900 2650 50  0001 C CNN
-	1    4200 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 2450 4200 2450
-Wire Wire Line
-	4200 2450 4200 2550
-$Comp
-L Connector:Conn_01x09_Male J3
-U 1 1 5FC6C7D0
-P 3400 2350
-F 0 "J3" H 3500 2900 50  0000 C CNN
-F 1 "Conn_01x09_Male" V 3300 2350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 3400 2350 50  0001 C CNN
-F 3 "~" H 3400 2350 50  0001 C CNN
-	1    3400 2350
+L DX_MON:0V #PWR01
+U 1 1 5FCEC414
+P 8250 1500
+F 0 "#PWR01" H 8250 1300 50  0001 C CNN
+F 1 "0V" H 8255 1327 50  0000 C CNN
+F 2 "" H 7950 1600 50  0001 C CNN
+F 3 "" H 7950 1600 50  0001 C CNN
+	1    8250 1500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 1950 3200 1950
+	8350 1300 8325 1300
+NoConn ~ 4050 3950
+Text Label 4150 4050 0    50   ~ 0
+CAN2_TxD
+Text Label 4150 4150 0    50   ~ 0
+CAN2_RxD
+Text Label 4150 4250 0    50   ~ 0
+CAN2_TERM
+$Comp
+L Connector:DB9_Male J4
+U 1 1 5FCF8B85
+P 10200 2200
+F 0 "J4" H 10300 2750 50  0000 C CNN
+F 1 "A-DS 09 A/KG-T2S" V 10450 2200 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10200 2200 50  0001 C CNN
+F 3 " ~" H 10200 2200 50  0001 C CNN
+F 4 "Assmann WSW Components" H 10200 2200 50  0001 C CNN "MFR"
+F 5 "A-DS 09 A/KG-T2S" H 10200 2200 50  0001 C CNN "MPN"
+	1    10200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J3
+U 1 1 5FCF8B9B
+P 9100 2200
+F 0 "J3" H 9200 2750 50  0000 C CNN
+F 1 "Conn_01x09_Male" V 9000 2200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 9100 2200 50  0001 C CNN
+F 3 "~" H 9100 2200 50  0001 C CNN
+	1    9100 2200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2950 2150 3200 2150
+	9900 1800 9300 1800
 Wire Wire Line
-	2950 2050 3200 2050
+	9900 2000 9300 2000
 Wire Wire Line
-	2950 2250 3200 2250
+	9900 2100 9300 2100
 Wire Wire Line
-	3200 2350 2950 2350
+	9300 2500 9900 2500
 Wire Wire Line
-	2950 2450 3200 2450
+	9900 2600 9300 2600
 Wire Wire Line
-	2950 2550 3200 2550
+	7300 2100 7850 2100
 Wire Wire Line
-	3200 2650 2950 2650
+	7300 2200 7950 2200
 Wire Wire Line
-	2950 2750 3200 2750
-Text Label 8250 6150 1    50   ~ 0
-CAN1_+5V
+	7950 2200 7950 1300
+Connection ~ 7950 2200
 Wire Wire Line
-	8250 6150 8250 5500
+	7950 2200 8400 2200
+Connection ~ 7850 2100
 Wire Wire Line
-	4550 2250 4550 2200
+	7850 2100 8400 2100
 Wire Wire Line
-	4550 2200 5000 2200
+	7850 1200 7850 2100
 Wire Wire Line
-	4100 2250 4550 2250
+	7850 1200 8325 1200
+$Comp
+L DX_MON:0V #PWR02
+U 1 1 5FC67B1A
+P 8250 2400
+F 0 "#PWR02" H 8250 2200 50  0001 C CNN
+F 1 "0V" H 8255 2227 50  0000 C CNN
+F 2 "" H 7950 2500 50  0001 C CNN
+F 3 "" H 7950 2500 50  0001 C CNN
+	1    8250 2400
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	4550 2350 4550 2400
+	8250 2300 8250 2400
 Wire Wire Line
-	4550 2400 5000 2400
+	8250 2300 8400 2300
 Wire Wire Line
-	4100 2350 4550 2350
+	6100 4900 5550 4900
+Text Label 5550 4900 0    50   ~ 0
++5V
+Text Label 6950 5200 0    50   ~ 0
+CAN2_L
+Text Label 6950 5000 0    50   ~ 0
+CAN2_H
+$Comp
+L Connector:Conn_01x03_Male J7
+U 1 1 5FD1E45B
+P 8600 5150
+F 0 "J7" H 8700 4900 50  0000 C CNN
+F 1 "Conn_01x03_Male" V 8500 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8600 5150 50  0001 C CNN
+F 3 "~" H 8600 5150 50  0001 C CNN
+	1    8600 5150
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	4550 5350 4550 5400
+	7300 5050 7300 5000
 Wire Wire Line
-	4550 5400 5000 5400
+	7300 5000 6850 5000
 Wire Wire Line
-	4550 5250 4550 5200
+	7300 5150 7300 5200
 Wire Wire Line
-	4550 5200 5000 5200
+	7300 5200 6850 5200
+$Sheet
+S 6100 4800 750  600 
+U 5FD1E469
+F0 "CAN2" 50
+F1 "CANx.sch" 50
+F2 "TxD" I L 6100 5050 50 
+F3 "RxD" I L 6100 5150 50 
+F4 "TERM" I L 6100 5300 50 
+F5 "+5V" I L 6100 4900 50 
+F6 "CANH" I R 6850 5000 50 
+F7 "CANL" I R 6850 5200 50 
+$EndSheet
 Wire Wire Line
-	8150 1850 8350 1850
+	8350 4350 8325 4350
 Wire Wire Line
-	7250 5650 7450 5650
-Text Notes 3050 1500 0    50   ~ 0
-CAN1 allows you to connect an arbitary DE-9 cable to the CAN interface.\nThe patching between J3 and J4 provide flexibility, as there doesn't appear\nto be a single DE-9 pinout for CAN - the OBD-II cables have one pinout,\nand each vendor appears to have their own (Peak, NI, etc...)
-Text Notes 3050 4500 0    50   ~ 0
-CAN2 breaks out to a 3-way spring-loaded terminal block. This permits\nthe user to connect any bare-wire cable, in any way they wish.
-Text Notes 8400 5325 0    50   ~ 0
-Glasgow Interface\nPort B
-Text Notes 3050 3950 0    50   ~ 0
-NOTE: Label these pins clearly on Top Silk\n\nBosch / Vector / Intrepid Control Systems use:\npin 3 = 0v\npin 2 = CANL\npin 7 = CANH\n\nOBD-II to DE-9 use:\npin 1 = 0v\npin 5 = CANL\npin 3 = CANH\n\nSee: https://wiki.linklayer.com/index.php/CANtact#Connections_.26_Jumpers
+	8250 4350 8250 4450
+$Comp
+L DX_MON:0V #PWR03
+U 1 1 5FD1E479
+P 8250 4450
+F 0 "#PWR03" H 8250 4250 50  0001 C CNN
+F 1 "0V" H 8255 4277 50  0000 C CNN
+F 2 "" H 7950 4550 50  0001 C CNN
+F 3 "" H 7950 4550 50  0001 C CNN
+	1    8250 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4250 8325 4250
+$Comp
+L Connector:DB9_Male J9
+U 1 1 5FD1E482
+P 10200 5150
+F 0 "J9" H 10300 5700 50  0000 C CNN
+F 1 "A-DS 09 A/KG-T2S" V 10450 5150 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10200 5150 50  0001 C CNN
+F 3 " ~" H 10200 5150 50  0001 C CNN
+F 4 "Assmann WSW Components" H 10200 5150 50  0001 C CNN "MFR"
+F 5 "A-DS 09 A/KG-T2S" H 10200 5150 50  0001 C CNN "MPN"
+	1    10200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J8
+U 1 1 5FD1E488
+P 9100 5150
+F 0 "J8" H 9200 5700 50  0000 C CNN
+F 1 "Conn_01x09_Male" V 9000 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 9100 5150 50  0001 C CNN
+F 3 "~" H 9100 5150 50  0001 C CNN
+	1    9100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 4750 9600 4750
+Wire Wire Line
+	9900 4850 9300 4850
+Wire Wire Line
+	9900 5050 9300 5050
+Wire Wire Line
+	9900 5250 9300 5250
+Wire Wire Line
+	9900 5350 9300 5350
+Wire Wire Line
+	9300 5450 9900 5450
+Wire Wire Line
+	7300 5050 7850 5050
+Wire Wire Line
+	7300 5150 7950 5150
+Wire Wire Line
+	7950 5150 7950 4250
+Connection ~ 7950 5150
+Wire Wire Line
+	7950 5150 8400 5150
+Connection ~ 7850 5050
+Wire Wire Line
+	7850 5050 8400 5050
+Wire Wire Line
+	7850 4150 7850 5050
+Wire Wire Line
+	7850 4150 8325 4150
+$Comp
+L DX_MON:0V #PWR05
+U 1 1 5FD1E4A0
+P 8250 5350
+F 0 "#PWR05" H 8250 5150 50  0001 C CNN
+F 1 "0V" H 8255 5177 50  0000 C CNN
+F 2 "" H 7950 5450 50  0001 C CNN
+F 3 "" H 7950 5450 50  0001 C CNN
+	1    8250 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5250 8250 5350
+Wire Wire Line
+	8250 5250 8400 5250
+Wire Wire Line
+	4050 3650 4950 3650
+Wire Wire Line
+	4950 2100 6100 2100
+Wire Wire Line
+	4050 3750 5050 3750
+Wire Wire Line
+	5050 2200 6100 2200
+Wire Wire Line
+	4050 3850 5150 3850
+Wire Wire Line
+	5150 4050 5150 5050
+Wire Wire Line
+	4050 4050 5150 4050
+Wire Wire Line
+	5150 5050 6100 5050
+Wire Wire Line
+	5050 5150 5050 4150
+Wire Wire Line
+	4050 4150 5050 4150
+Wire Wire Line
+	5050 5150 6100 5150
+Wire Wire Line
+	4950 4250 4950 5300
+Wire Wire Line
+	4050 4250 4950 4250
+Wire Wire Line
+	4950 5300 6100 5300
+Wire Wire Line
+	5150 2350 6100 2350
+Text Notes 1150 2800 0    50   ~ 0
+This add-on is intended to permit easy interfacing with CAN devices.\n\nTwo channels are provided, each of which has two connection options:\n1. A spring-loaded terminal block, suitable for use with wire-ends\n2. A DE-9 with pins, paired with a small patch panel\n\nWhen using the DE-9, you must connect your pinout using standard 0.1" cables,\nbecause the pinout is not standard. Common patches include:\n\n    Bosch / Vector / etc...:\n      pin 7 = CANH\n      pin 2 = CANL\n      pin 3 = 0v\n\n    Common OBD-II to DE-9 cables:\n      pin 3 = CANH\n      pin 5 = CANL\n      pin 1 = 0v
+Text Notes 9050 1300 0    79   Italic 0
+CAN 1
+Text Notes 9050 4250 0    79   Italic 0
+CAN 2
+Wire Wire Line
+	9500 2800 9200 2800
+Wire Wire Line
+	9600 3000 9200 3000
+$Comp
+L pkl_misc:pkl_jumper_nc J10
+U 1 1 5FD57198
+P 9100 2800
+F 0 "J10" H 9100 2850 50  0000 C BNN
+F 1 "pkl_jumper_nc" H 9100 2934 50  0001 C CNN
+F 2 "pkl_jumpers:J_NC_0603_20" H 9100 2800 50  0001 C CNN
+F 3 "" H 9100 2800 50  0001 C CNN
+	1    9100 2800
+	1    0    0    -1  
+$EndComp
+Text Label 8650 2800 0    50   ~ 0
+CAN1_H
+Text Label 8650 3000 0    50   ~ 0
+CAN1_L
+Wire Wire Line
+	8650 3000 9000 3000
+Wire Wire Line
+	8650 2800 9000 2800
+Wire Wire Line
+	9300 1900 9900 1900
+Wire Wire Line
+	9300 2400 9600 2400
+Wire Wire Line
+	9300 2300 9500 2300
+Wire Wire Line
+	9300 2200 9800 2200
+$Comp
+L pkl_misc:pkl_jumper_nc J11
+U 1 1 5FD95E3D
+P 9100 3000
+F 0 "J11" H 9100 3050 50  0000 C BNN
+F 1 "pkl_jumper_nc" H 9100 3134 50  0001 C CNN
+F 2 "pkl_jumpers:J_NC_0603_20" H 9100 3000 50  0001 C CNN
+F 3 "" H 9100 3000 50  0001 C CNN
+	1    9100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_misc:pkl_jumper_nc J12
+U 1 1 5FD9601F
+P 9100 3200
+F 0 "J12" H 9100 3250 50  0000 C BNN
+F 1 "pkl_jumper_nc" H 9100 3334 50  0001 C CNN
+F 2 "pkl_jumpers:J_NC_0603_20" H 9100 3200 50  0001 C CNN
+F 3 "" H 9100 3200 50  0001 C CNN
+	1    9100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2300 9500 2800
+Connection ~ 9500 2300
+Wire Wire Line
+	9500 2300 9900 2300
+Wire Wire Line
+	9600 2400 9600 3000
+Connection ~ 9600 2400
+Wire Wire Line
+	9600 2400 9900 2400
+Wire Wire Line
+	9800 2200 9800 3200
+Wire Wire Line
+	9800 3200 9200 3200
+Connection ~ 9800 2200
+Wire Wire Line
+	9800 2200 9900 2200
+$Comp
+L DX_MON:0V #PWR016
+U 1 1 5FDAA3E4
+P 8900 3300
+F 0 "#PWR016" H 8900 3100 50  0001 C CNN
+F 1 "0V" H 8905 3127 50  0000 C CNN
+F 2 "" H 8600 3400 50  0001 C CNN
+F 3 "" H 8600 3400 50  0001 C CNN
+	1    8900 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3200 8900 3200
+Wire Wire Line
+	8900 3200 8900 3300
+Wire Wire Line
+	4950 2100 4950 3650
+Wire Wire Line
+	5150 2350 5150 3850
+Wire Wire Line
+	5050 2200 5050 3750
+Wire Wire Line
+	9300 4950 9900 4950
+Wire Wire Line
+	9300 5150 9500 5150
+Wire Wire Line
+	9300 5550 9800 5550
+Wire Wire Line
+	9500 5750 9200 5750
+Wire Wire Line
+	9600 5950 9200 5950
+$Comp
+L pkl_misc:pkl_jumper_nc J13
+U 1 1 5FDE8395
+P 9100 5750
+F 0 "J13" H 9100 5800 50  0000 C BNN
+F 1 "pkl_jumper_nc" H 9100 5884 50  0001 C CNN
+F 2 "pkl_jumpers:J_NC_0603_20" H 9100 5750 50  0001 C CNN
+F 3 "" H 9100 5750 50  0001 C CNN
+	1    9100 5750
+	1    0    0    -1  
+$EndComp
+Text Label 8650 5750 0    50   ~ 0
+CAN2_H
+Text Label 8650 5950 0    50   ~ 0
+CAN2_L
+Wire Wire Line
+	8650 5950 9000 5950
+Wire Wire Line
+	8650 5750 9000 5750
+$Comp
+L pkl_misc:pkl_jumper_nc J14
+U 1 1 5FDE839F
+P 9100 5950
+F 0 "J14" H 9100 6000 50  0000 C BNN
+F 1 "pkl_jumper_nc" H 9100 6084 50  0001 C CNN
+F 2 "pkl_jumpers:J_NC_0603_20" H 9100 5950 50  0001 C CNN
+F 3 "" H 9100 5950 50  0001 C CNN
+	1    9100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L pkl_misc:pkl_jumper_nc J15
+U 1 1 5FDE83A5
+P 9100 6150
+F 0 "J15" H 9100 6200 50  0000 C BNN
+F 1 "pkl_jumper_nc" H 9100 6284 50  0001 C CNN
+F 2 "pkl_jumpers:J_NC_0603_20" H 9100 6150 50  0001 C CNN
+F 3 "" H 9100 6150 50  0001 C CNN
+	1    9100 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 6150 9200 6150
+$Comp
+L DX_MON:0V #PWR017
+U 1 1 5FDE83AC
+P 8900 6250
+F 0 "#PWR017" H 8900 6050 50  0001 C CNN
+F 1 "0V" H 8905 6077 50  0000 C CNN
+F 2 "" H 8600 6350 50  0001 C CNN
+F 3 "" H 8600 6350 50  0001 C CNN
+	1    8900 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 6150 8900 6150
+Wire Wire Line
+	8900 6150 8900 6250
+Wire Wire Line
+	9500 5150 9500 5750
+Connection ~ 9500 5150
+Wire Wire Line
+	9500 5150 9900 5150
+Wire Wire Line
+	9600 4750 9600 5950
+Connection ~ 9600 4750
+Wire Wire Line
+	9600 4750 9300 4750
+Wire Wire Line
+	9800 5550 9800 6150
+Connection ~ 9800 5550
+Wire Wire Line
+	9800 5550 9900 5550
+Text Notes 9050 1400 0    50   ~ 0
+Wired by default for Bosch / Vector pinout
+Text Notes 9050 4350 0    50   ~ 0
+Wired by default for OBD-II to DE-9 cables
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom J1
+U 1 1 5FCEC40C
+P 8550 1300
+F 0 "J1" H 8600 1100 50  0000 C TNN
+F 1 "2834077-2" H 8600 1500 50  0000 C BNN
+F 2 "glasgow-can:TE_2834077-2" H 8550 1300 50  0001 C CNN
+F 3 "~" H 8550 1300 50  0001 C CNN
+F 4 "TE Connectivity" H 8550 1300 50  0001 C CNN "MFG"
+F 5 "2834077-2" H 8550 1300 50  0001 C CNN "MPN"
+	1    8550 1300
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom J6
+U 1 1 5FE20603
+P 8550 4250
+F 0 "J6" H 8600 4050 50  0000 C TNN
+F 1 "2834077-2" H 8600 4450 50  0000 C BNN
+F 2 "glasgow-can:TE_2834077-2" H 8550 4250 50  0001 C CNN
+F 3 "~" H 8550 4250 50  0001 C CNN
+F 4 "TE Connectivity" H 8550 4250 50  0001 C CNN "MFG"
+F 5 "2834077-2" H 8550 4250 50  0001 C CNN "MPN"
+	1    8550 4250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8325 1200 8325 1225
+Wire Wire Line
+	8875 1225 8875 1200
+Wire Wire Line
+	8875 1200 8850 1200
+Wire Wire Line
+	8325 1225 8875 1225
+Connection ~ 8325 1200
+Wire Wire Line
+	8325 1200 8350 1200
+Wire Wire Line
+	8325 1300 8325 1325
+Wire Wire Line
+	8325 1325 8875 1325
+Wire Wire Line
+	8875 1325 8875 1300
+Wire Wire Line
+	8875 1300 8850 1300
+Connection ~ 8325 1300
+Wire Wire Line
+	8325 1300 7950 1300
+Wire Wire Line
+	8325 1400 8325 1425
+Wire Wire Line
+	8325 1425 8875 1425
+Wire Wire Line
+	8875 1425 8875 1400
+Wire Wire Line
+	8875 1400 8850 1400
+Connection ~ 8325 1400
+Wire Wire Line
+	8325 1400 8250 1400
+Wire Wire Line
+	8325 4150 8325 4175
+Wire Wire Line
+	8325 4175 8875 4175
+Wire Wire Line
+	8875 4175 8875 4150
+Wire Wire Line
+	8875 4150 8850 4150
+Connection ~ 8325 4150
+Wire Wire Line
+	8325 4150 8350 4150
+Wire Wire Line
+	8325 4250 8325 4275
+Wire Wire Line
+	8325 4275 8875 4275
+Wire Wire Line
+	8875 4275 8875 4250
+Wire Wire Line
+	8875 4250 8850 4250
+Connection ~ 8325 4250
+Wire Wire Line
+	8325 4250 7950 4250
+Wire Wire Line
+	8325 4350 8325 4375
+Wire Wire Line
+	8325 4375 8875 4375
+Wire Wire Line
+	8875 4375 8875 4350
+Wire Wire Line
+	8875 4350 8850 4350
+Connection ~ 8325 4350
+Wire Wire Line
+	8325 4350 8250 4350
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FF2F90D
+P 1400 6500
+F 0 "H1" H 1400 6700 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1500 6458 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1400 6500 50  0001 C CNN
+F 3 "~" H 1400 6500 50  0001 C CNN
+	1    1400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FF30176
+P 1600 6500
+F 0 "H2" H 1600 6700 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1700 6458 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1600 6500 50  0001 C CNN
+F 3 "~" H 1600 6500 50  0001 C CNN
+	1    1600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FF30358
+P 1800 6500
+F 0 "H3" H 1800 6700 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1900 6458 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1800 6500 50  0001 C CNN
+F 3 "~" H 1800 6500 50  0001 C CNN
+	1    1800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5FF30540
+P 2000 6500
+F 0 "H4" H 2000 6700 50  0000 C CNN
+F 1 "MountingHole_Pad" H 2100 6458 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2000 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+	1    2000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L DX_MON:0V #PWR018
+U 1 1 5FF307BA
+P 1400 6800
+F 0 "#PWR018" H 1400 6600 50  0001 C CNN
+F 1 "0V" H 1405 6627 50  0000 C CNN
+F 2 "" H 1100 6900 50  0001 C CNN
+F 3 "" H 1100 6900 50  0001 C CNN
+	1    1400 6800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6600 1400 6700
+Wire Wire Line
+	1400 6700 1600 6700
+Wire Wire Line
+	1600 6700 1600 6600
+Connection ~ 1400 6700
+Wire Wire Line
+	1400 6700 1400 6800
+Wire Wire Line
+	1800 6700 1800 6600
+Wire Wire Line
+	1800 6700 2000 6700
+Wire Wire Line
+	2000 6700 2000 6600
+Connection ~ 1800 6700
+Wire Wire Line
+	1600 6700 1800 6700
+Connection ~ 1600 6700
+Text Notes 1200 3750 0    50   ~ 0
+TODO:\n- [ ] Confirm DE-9 pinout / footprint\n- [ ] Licensing
 $EndSCHEMATC
