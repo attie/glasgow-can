@@ -726,12 +726,12 @@ TODO:\n- [x] Confirm DE-9 pinout / footprint\n- [ ] Licensing
 Text Notes 950  1150 0    197  ~ 0
 Glasgow 2x CAN Add-On
 $Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO?
+L Graphic:Logo_Open_Hardware_Large LOGO1
 U 1 1 5FD20AE9
 P 6100 7150
-F 0 "#LOGO?" H 6100 7650 50  0001 C CNN
+F 0 "LOGO1" H 6100 7650 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 6100 6750 50  0001 C CNN
-F 2 "" H 6100 7150 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 6100 7150 50  0001 C CNN
 F 3 "~" H 6100 7150 50  0001 C CNN
 	1    6100 7150
 	1    0    0    -1  
