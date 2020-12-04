@@ -20,3 +20,9 @@ Future plans:
 - Isolation between each CAN port and the Glasgow (and host)
 
 Out-of-Tree support will be required when work on the applet begins (see PR [#213](https://github.com/GlasgowEmbedded/glasgow/pull/213)).
+
+---
+
+![CAN Add-On Top](./hardware/glasgow-can/board-top.png)
+
+![CAN Add-On Bottom](./hardware/glasgow-can/board-bottom.png)
