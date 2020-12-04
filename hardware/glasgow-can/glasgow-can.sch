@@ -159,7 +159,7 @@ U 1 1 5FCF8B85
 P 10200 2200
 F 0 "J4" H 10300 2750 50  0000 C CNN
 F 1 "A-DS 09 A/KG-T2S" V 10450 2200 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10200 2200 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10200 2200 50  0001 C CNN
 F 3 " ~" H 10200 2200 50  0001 C CNN
 F 4 "Assmann WSW Components" H 10200 2200 50  0001 C CNN "MFR"
 F 5 "A-DS 09 A/KG-T2S" H 10200 2200 50  0001 C CNN "MPN"
@@ -170,12 +170,12 @@ $Comp
 L Connector:Conn_01x09_Male J3
 U 1 1 5FCF8B9B
 P 9100 2200
-F 0 "J3" H 9200 2750 50  0000 C CNN
+F 0 "J3" H 9200 1650 50  0000 C CNN
 F 1 "Conn_01x09_Male" V 9000 2200 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 9100 2200 50  0001 C CNN
 F 3 "~" H 9100 2200 50  0001 C CNN
 	1    9100 2200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9900 1800 9300 1800
@@ -280,7 +280,7 @@ U 1 1 5FD1E482
 P 10200 5150
 F 0 "J9" H 10300 5700 50  0000 C CNN
 F 1 "A-DS 09 A/KG-T2S" V 10450 5150 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10200 5150 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 10200 5150 50  0001 C CNN
 F 3 " ~" H 10200 5150 50  0001 C CNN
 F 4 "Assmann WSW Components" H 10200 5150 50  0001 C CNN "MFR"
 F 5 "A-DS 09 A/KG-T2S" H 10200 5150 50  0001 C CNN "MPN"
@@ -291,12 +291,12 @@ $Comp
 L Connector:Conn_01x09_Male J8
 U 1 1 5FD1E488
 P 9100 5150
-F 0 "J8" H 9200 5700 50  0000 C CNN
+F 0 "J8" H 9200 4600 50  0000 C CNN
 F 1 "Conn_01x09_Male" V 9000 5150 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 9100 5150 50  0001 C CNN
 F 3 "~" H 9100 5150 50  0001 C CNN
 	1    9100 5150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9900 4750 9600 4750
@@ -371,11 +371,11 @@ Wire Wire Line
 	4950 5300 6100 5300
 Wire Wire Line
 	5150 2350 6100 2350
-Text Notes 1150 2800 0    50   ~ 0
-This add-on is intended to permit easy interfacing with CAN devices.\n\nTwo channels are provided, each of which has two connection options:\n1. A spring-loaded terminal block, suitable for use with wire-ends\n2. A DE-9 with pins, paired with a small patch panel\n\nWhen using the DE-9, you must connect your pinout using standard 0.1" cables,\nbecause the pinout is not standard. Common patches include:\n\n    Bosch / Vector / etc...:\n      pin 7 = CANH\n      pin 2 = CANL\n      pin 3 = 0v\n\n    Common OBD-II to DE-9 cables:\n      pin 3 = CANH\n      pin 5 = CANL\n      pin 1 = 0v
-Text Notes 9050 1300 0    79   Italic 0
+Text Notes 1100 2300 0    50   ~ 0
+This add-on is intended to permit easy interfacing with CAN devices.\n\nTwo channels are provided, each of which has two connection options:\n  1. A spring-loaded terminal block, suitable for use with wire-ends\n  2. A DE-9 with pins, paired with a small patch panel\n\nThe board ships with the DE-9 connectors wired for some common pinouts.\n  - CAN1 is wired for Bosch / Vector\n  - CAN2 is wired for common DE-9 to OBD-II cables\n\nIf you require a different pinout, or the same on both ports, you must cut the jumpers\nand patch in your own pinout.
+Text Notes 9150 1250 0    118  Italic 0
 CAN 1
-Text Notes 9050 4250 0    79   Italic 0
+Text Notes 9150 4200 0    118  Italic 0
 CAN 2
 Wire Wire Line
 	9500 2800 9200 2800
@@ -650,77 +650,90 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5FF2F90D
-P 1400 6500
-F 0 "H1" H 1400 6700 50  0000 C CNN
-F 1 "MountingHole_Pad" H 1500 6458 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1400 6500 50  0001 C CNN
-F 3 "~" H 1400 6500 50  0001 C CNN
-	1    1400 6500
+P 1850 6800
+F 0 "H1" H 1850 7000 50  0000 C CNN
+F 1 "MountingHole_Pad" H 1950 6758 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1850 6800 50  0001 C CNN
+F 3 "~" H 1850 6800 50  0001 C CNN
+	1    1850 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5FF30176
-P 1600 6500
-F 0 "H2" H 1600 6700 50  0000 C CNN
-F 1 "MountingHole_Pad" H 1700 6458 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1600 6500 50  0001 C CNN
-F 3 "~" H 1600 6500 50  0001 C CNN
-	1    1600 6500
+P 2050 6800
+F 0 "H2" H 2050 7000 50  0000 C CNN
+F 1 "MountingHole_Pad" H 2150 6758 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2050 6800 50  0001 C CNN
+F 3 "~" H 2050 6800 50  0001 C CNN
+	1    2050 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5FF30358
-P 1800 6500
-F 0 "H3" H 1800 6700 50  0000 C CNN
-F 1 "MountingHole_Pad" H 1900 6458 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1800 6500 50  0001 C CNN
-F 3 "~" H 1800 6500 50  0001 C CNN
-	1    1800 6500
+P 2250 6800
+F 0 "H3" H 2250 7000 50  0000 C CNN
+F 1 "MountingHole_Pad" H 2350 6758 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2250 6800 50  0001 C CNN
+F 3 "~" H 2250 6800 50  0001 C CNN
+	1    2250 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5FF30540
-P 2000 6500
-F 0 "H4" H 2000 6700 50  0000 C CNN
-F 1 "MountingHole_Pad" H 2100 6458 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2000 6500 50  0001 C CNN
-F 3 "~" H 2000 6500 50  0001 C CNN
-	1    2000 6500
+P 2450 6800
+F 0 "H4" H 2450 7000 50  0000 C CNN
+F 1 "MountingHole_Pad" H 2550 6758 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2450 6800 50  0001 C CNN
+F 3 "~" H 2450 6800 50  0001 C CNN
+	1    2450 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L DX_MON:0V #PWR018
 U 1 1 5FF307BA
-P 1400 6800
-F 0 "#PWR018" H 1400 6600 50  0001 C CNN
-F 1 "0V" H 1405 6627 50  0000 C CNN
-F 2 "" H 1100 6900 50  0001 C CNN
-F 3 "" H 1100 6900 50  0001 C CNN
-	1    1400 6800
+P 1850 7100
+F 0 "#PWR018" H 1850 6900 50  0001 C CNN
+F 1 "0V" H 1855 6927 50  0000 C CNN
+F 2 "" H 1550 7200 50  0001 C CNN
+F 3 "" H 1550 7200 50  0001 C CNN
+	1    1850 7100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 6600 1400 6700
+	1850 6900 1850 7000
 Wire Wire Line
-	1400 6700 1600 6700
+	1850 7000 2050 7000
 Wire Wire Line
-	1600 6700 1600 6600
-Connection ~ 1400 6700
+	2050 7000 2050 6900
+Connection ~ 1850 7000
 Wire Wire Line
-	1400 6700 1400 6800
+	1850 7000 1850 7100
 Wire Wire Line
-	1800 6700 1800 6600
+	2250 7000 2250 6900
 Wire Wire Line
-	1800 6700 2000 6700
+	2250 7000 2450 7000
 Wire Wire Line
-	2000 6700 2000 6600
-Connection ~ 1800 6700
+	2450 7000 2450 6900
+Connection ~ 2250 7000
 Wire Wire Line
-	1600 6700 1800 6700
-Connection ~ 1600 6700
+	2050 7000 2250 7000
+Connection ~ 2050 7000
 Text Notes 1200 3750 0    50   ~ 0
-TODO:\n- [ ] Confirm DE-9 pinout / footprint\n- [ ] Licensing
+TODO:\n- [x] Confirm DE-9 pinout / footprint\n- [ ] Licensing
+Text Notes 950  1150 0    197  ~ 0
+Glasgow 2x CAN Add-On
+$Comp
+L Graphic:Logo_Open_Hardware_Large #LOGO?
+U 1 1 5FD20AE9
+P 6100 7150
+F 0 "#LOGO?" H 6100 7650 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 6100 6750 50  0001 C CNN
+F 2 "" H 6100 7150 50  0001 C CNN
+F 3 "~" H 6100 7150 50  0001 C CNN
+	1    6100 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
