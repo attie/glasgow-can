@@ -11,7 +11,7 @@ A rough spec is outlined below:
   - Can be easily rewired by cutting jumpers
 - Spring-loaded terminal blocks for ease-of-use
 - Indicator LEDs for Tx and Rx
-- Software configurable 120&Ohm; termination, with state LED
+- Software configurable 120Ω termination, with state LED
 - ESD protection
 - CAN FD support in hardware (software to follow)
 
