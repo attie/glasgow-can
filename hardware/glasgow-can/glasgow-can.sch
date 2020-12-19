@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Glasgow CAN Add-On"
-Date "2020-11-20"
+Date "2020-12-19"
 Rev "r0"
 Comp ""
 Comment1 ""
@@ -721,8 +721,6 @@ Connection ~ 2250 7000
 Wire Wire Line
 	2050 7000 2250 7000
 Connection ~ 2050 7000
-Text Notes 1200 3750 0    50   ~ 0
-TODO:\n- [x] Confirm DE-9 pinout / footprint\n- [ ] Licensing
 Text Notes 950  1150 0    197  ~ 0
 Glasgow 2x CAN Add-On
 $Comp
@@ -736,4 +734,6 @@ F 3 "~" H 6100 7150 50  0001 C CNN
 	1    6100 7150
 	1    0    0    -1  
 $EndComp
+Text Notes 5800 7650 0    50   ~ 0
+BSD-3-Clause
 $EndSCHEMATC
